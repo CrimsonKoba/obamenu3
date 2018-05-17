@@ -178,7 +178,7 @@ def process_dtfile(dtf,  catDict):  # process this file & extract relevant info
                 continue
             this.add_type(eqi[1])
         elif eqi[0] == "Categories":
-            if eqi[1][-1] == ';':
+            if eqi[1] and eqi[1][-1] == ';':
                 eqi[1] = eqi[1][0:-1]
             cats = []
             # DEBUG
